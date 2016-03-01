@@ -24,23 +24,23 @@ class TestNextMeetupOnLeapYear(unittest.TestCase):
 		self.assertFalse(is_leap_year(2017))
 
 	def test_next_leap_year_4_year_case(self):
-			self.assertEqual(next_leap_year(2017), 2020)
+		self.assertEqual(next_leap_year(2017), 2020)
 
 	def test_next_leap_year_100_year_case(self):
-			self.assertEqual(next_leap_year(2099), 2104)
+		self.assertEqual(next_leap_year(2099), 2104)
 
 	def test_next_leap_year_400_year_case(self):
-			self.assertEqual(next_leap_year(1999), 2000)
+		self.assertEqual(next_leap_year(1999), 2000)
 
 	def test_feb_29_is_monday_2016_case_true(self):
-			self.assertTrue(feb_29_is_monday(2016))
+		self.assertTrue(feb_29_is_monday(2016))
 
 	def test_feb_29_is_monday_2012_case_false(self):
-			self.assertFalse(feb_29_is_monday(2012))
+		self.assertFalse(feb_29_is_monday(2012))
 
 	def test_feb_29_is_monday_throws_error_on_non_leapyear(self):
 		with self.assertRaises(ValueError):
-			feb_29_is_monday(2011)
+		feb_29_is_monday(2011)
 
 	def test_next_pyco_leapyear_monday_2015_case(self):
 		self.assertEqual(next_pyco_leapyear_monday(2015), 2016)
